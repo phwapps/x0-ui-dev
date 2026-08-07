@@ -1,0 +1,9 @@
+{
+  "name": "beamng-car-hub",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "npx --yes serve -l 3000 .",
+    "start": "npx --yes serve -l 3000 ."
+  }
+}
