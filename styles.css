@@ -422,9 +422,16 @@ main {
 
 .topbar-search {
   position: relative;
-  flex: 1;
-  min-width: 220px;
-  max-width: 340px;
+  width: 170px;
+}
+
+.btn-action.green-alert {
+  color: #4ef060;
+  border-color: rgba(78, 240, 96, 0.4);
+}
+.btn-action.green-alert:hover {
+  background: rgba(78, 240, 96, 0.1);
+  border-color: #4ef060;
 }
 .search-icon {
   position: absolute;
