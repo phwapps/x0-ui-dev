@@ -565,6 +565,7 @@ main {
   border-radius: 9px;
   cursor: pointer;
   font-family: inherit;
+  white-space: nowrap;
   will-change: transform, background-color;
   transition: background-color 0.2s ease, transform 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
@@ -574,6 +575,15 @@ main {
 .btn-download.done { background: var(--ok); color: #fff; }
 .btn-download.downloading { background: #dc2626; color: #fff; }
 .btn-download.downloading:hover { background: #b91c1c; }
+.btn-download.unavailable {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #7e7e87 !important;
+  cursor: not-allowed !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  pointer-events: none;
+}
+.btn-download.unavailable:hover { background: rgba(255, 255, 255, 0.08) !important; transform: none !important; }
+.btn-download.unavailable svg { opacity: 0.6; stroke: #7e7e87; }
 
 .btn-like {
   display: inline-flex;
