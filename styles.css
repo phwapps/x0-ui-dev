@@ -863,3 +863,10 @@ main {
   white-space: nowrap;
 }
 
+
+
+/* Fix for hidden attribute on flex containers */
+.discord-profile[hidden] {
+  display: none !important;
+}
+
