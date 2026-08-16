@@ -870,3 +870,31 @@ main {
   display: none !important;
 }
 
+
+
+/* ========================================================= */
+/* EXTREME PERFORMANCE OPTIMIZATIONS (SMOOTH SCROLLING) */
+/* ========================================================= */
+
+.car-card {
+  /* Skips rendering of off-screen cards entirely */
+  content-visibility: auto;
+  contain-intrinsic-size: 260px;
+  
+  /* Forces GPU Hardware Acceleration */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.car-thumb img {
+  /* Hardware acceleration for images to prevent lag */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+.car-grid {
+  /* Optimize layout rendering for the grid */
+  contain: layout style;
+}
+
